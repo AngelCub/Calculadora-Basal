@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', function() {
+    FLU.style.display = 'none';
+    MAN.style.display = 'none';
+});
 const CALCULAR = document.getElementById('calcular');
 const ERROR = document.getElementById('error');
 const FLU = document.getElementById('flu');
@@ -5,7 +9,7 @@ const MAN = document.getElementById('man');
 const DATO_INPUT = document.getElementById('peso');
 
 CALCULAR.addEventListener('click', function() {
-    const DATO = DATO_INPUT.valueAsNumber; // Cambié el nombre a DATO_INPUT para evitar confusión
+    const DATO = DATO_INPUT.valueAsNumber; 
 
     if (DATO > 0) {
         ERROR.style.display = 'none';

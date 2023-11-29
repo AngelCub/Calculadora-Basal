@@ -1,40 +1,47 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
 body {
     background-image: url(https://img.freepik.com/fotos-premium/concepto-pediatria-estetoscopio-juguete-sobre-fondo-claro_441923-12020.jpg);
-    background-size: 800px;
-    background-repeat: repeat;
-    background-size:auto;
-    font-family:'Montserrat', sans-serif;
-    color: #333;
+    background-size: auto 183%;
+    background-position: center top;
+    font-family: 'Montserrat', sans-serif;
+    color: #0c0c0c;
+    background-color: #0c0c0c;
+    margin: 0;
 }
+
 
 #contenedor {
     background-color: #fff;
     text-align: center;
     width: 80%;
-    max-width: 1200px;
     margin: 50px auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-sizing: border-box;
 }
 
 #calculadora {
-    background: rgba(243, 239, 239, 0.9);
+    background: rgba(254, 254, 254, 0.9);
     width: 48%;
-    padding: 20px;
+    padding: 35px;
     float: left;
-    border-radius: 20px;
+    border-radius: 30px;
     box-sizing: border-box;
+    height: 400px;
+    overflow: auto;
 }
 
 #detalle {
     background: #007BFF;
     width: 48%;
-    padding: 20px;
+    padding: 35px;
     float: right;
-    color: #fff;
-    border-radius: 20px;
+    color: #efe2e2;
+    border-radius: 30px;
     box-sizing: border-box;
+    height: 400px;
+    text-align: justify;
+    
 }
 
 #contenido {
@@ -82,4 +89,10 @@ button:hover {
     font-size: 25px;
     margin-bottom: 5px;
     display: none;
+}
+.resultado {
+    font-weight: bold;
+}
+h1 {
+    text-align: center;
 }
