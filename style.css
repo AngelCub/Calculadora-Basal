@@ -1,75 +1,83 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
-
 body {
-
-    background: #f6f6f6;
-    font-family: "Montserrat";
-    color: rgb(0, 0, 0);
-    
+    background-image: url(https://img.freepik.com/fotos-premium/concepto-pediatria-estetoscopio-juguete-sobre-fondo-claro_441923-12020.jpg);
+    background-size: 800px;
+    background-repeat: repeat;
+    background-size:auto;
+    font-family:'Montserrat', sans-serif;
+    color: #333;
 }
+
 #contenedor {
-    background-color: rgb(8, 239, 255);
+    background-color: #fff;
     text-align: center;
-    width: 900px;
-    height: 500px;
-    position: absolute;
-    inset: 0;
-    margin: auto;
-}
-#calculadora{
-    background: rgba(255, 255, 255, 0.479);
-    width: 50%;
-    height: 100%;
-    float: left;
-    border-radius: 20%;
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#detalle{
-    background: #FF416C;
-    width: 50%;
-    height: 100%;
+#calculadora {
+    background: rgba(243, 239, 239, 0.9);
+    width: 48%;
+    padding: 20px;
     float: left;
-    color: #f6f5f7;
-    border-radius: 20%;
-    border-color: #FF416C;
+    border-radius: 20px;
+    box-sizing: border-box;
 }
+
+#detalle {
+    background: #007BFF;
+    width: 48%;
+    padding: 20px;
+    float: right;
+    color: #fff;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
 #contenido {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    overflow: hidden;
-    padding: 40px;
 }
+
 input {
-	width: 70%;
+    width: 100%;
     padding: 12px 15px;
-    border: #f6f6f6;
-    background-color: beige;
-    border-radius: 5%;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
+
 button {
     font-size: 15px;
-      font-weight: bold;
-      padding: 12px 45px;
-      border-radius: 30px;
-      background-color: #FF416C;
-      border: 1px solid #FF416C;
-      color: #FFFFFF;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      transition: transform 20ms ease-in;
-  }
-button:active {
-	transform: scale(0.95);
-    color: #0A81D1;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 5px;
+    background-color: #0056b3; 
+    border: 1px solid #0056b3; 
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 200ms ease-in-out; 
+    cursor: pointer;
 }
+
+button:hover {
+    transform: scale(1.05);
+}
+
 #error {
     color: red;
     font-weight: bold;
     display: none;
 }
+
 #resultado {
-    color: #0A81D1;
+    color: #0056b3;
     font-weight: bold;
     font-size: 25px;
     margin-bottom: 5px;
